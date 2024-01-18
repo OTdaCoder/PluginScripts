@@ -11,11 +11,11 @@ Before you execute the script do the following!
 5. Exit terminal or iterm
 
 If file doesnt open directly, do this .
-7. Right click on file
-8. Hold Option key on mac "⌥", whilst left clicking "Open"   
+1. Right click on file
+2. Hold Option key on mac "⌥", whilst left clicking "Open"   
 
 Executing the script
-9. Double click on the .command file (to uninstall plugin)
-10. You will be prompted for your computer password (it won't display, just type)
-11. Hit enter and process will begin
-12. Once done you can exit
+1. Double click on the .command file (to uninstall plugin)
+2. You will be prompted for your computer password (it won't display, just type)
+3. Hit enter and process will begin
+4. Once done you can exit
