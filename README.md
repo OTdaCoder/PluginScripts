@@ -3,7 +3,12 @@ Here you'll find a bunch of scripts to uninstall plugins on MacOS, I got lazy un
 demos and old plugin files so I decided to just make scripts to do it for me
 download, enjoy & if you have any to add go for it!
 
-Before you execute the script do the following!
+Easy Uninstall
+1. Open iterm or terminal
+2. drag and drop .command into terminal or iterm
+and follow instructions
+
+To make the script an executional file do the following!
 1. Open terminal or Iterm on Mac.
 2. Then paste the the following excluding "", "chmod +x "
 3. drag and drop the .command file into terminal
