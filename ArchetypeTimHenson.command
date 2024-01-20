@@ -1,0 +1,55 @@
+#!/bin/bash
+
+# Check for admin rights
+if [ "$(whoami)" != "root" ]; then
+    echo "This script requires administrator privileges. Please enter your password."
+    sudo "$0" "$@"
+    exit $?
+fi
+
+# Define file paths
+components_path="/Library/Audio/Plug-Ins/Components"
+vst_path="/Library/Audio/Plug-Ins/VST"
+vst3_path="/Library/Audio/Plug-Ins/VST3"
+aax_path="/Library/Application Support/Avid/Audio/Plug-Ins"
+presets_path="/Library/Application Support/Neural DSP"
+remove_app="/Applications/Neural DSP"
+
+# Define the plugin name (excluding file extension)
+plugin_name="Archetype Tim Henson"
+
+
+# Function to uninstall from a specific path
+uninstall_from_path() {
+    path=$1
+    if [ -d "$path" ]; then
+        echo "Uninstalling from $path..."
+        rm -rf "$path/$plugin_name"*
+    else
+        echo "Path $path not found. Skipping..."
+    fi
+}
+
+# Uninstall from each specified path
+uninstall_from_path "$components_path"
+uninstall_from_path "$vst_path"
+uninstall_from_path "$vst3_path"
+uninstall_from_path "$aax_path"
+
+# Remove the presets directory
+if [ -d "$presets_path" ]; then
+    echo "Removing presets directory: $presets_path"
+    rm -rf "$presets_path"
+else
+    echo "Presets directory $presets_path not found. Skipping..."
+fi
+
+# Remove Application
+if [ -d "$remove_app" ]; then
+    echo "Removing application: $plugin_name"
+    rm -rf "$remove_app"
+else
+    echo "Presets directory $remove_app not found. Skipping..."
+fi
+
+echo "Uninstallation complete for $plugin_name."
