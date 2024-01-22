@@ -17,7 +17,6 @@ If file doesnt open directly, do this .
    "macOS cannot verify the developer of “Plugin.command”. Are you sure you want to open it?"
 
 Executing the script
-1. Double click on the .command file (to uninstall plugin)
-2. You will be prompted for your computer password (it won't display, just type)
-3. Hit enter and process will begin
-4. Once done you can exit
+1. You will be prompted for your computer password (it won't display, just type)
+2. Hit enter and process will begin
+3. Once done you can exit
