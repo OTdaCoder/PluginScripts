@@ -12,7 +12,9 @@ To make the script an executional file do the following!
 
 If file doesnt open directly, do this .
 1. Right click on file
-2. Hold Option key "⌥" on mac, whilst left clicking "Open"   
+2. Hold Option key "⌥" on mac, whilst left clicking "Open"
+3. You will be prompted with the following, select "Open"
+   "macOS cannot verify the developer of “Plugin.command”. Are you sure you want to open it?"
 
 Executing the script
 1. Double click on the .command file (to uninstall plugin)
